@@ -15,58 +15,113 @@ const questions = () => {
     {
       type: 'input',
       name: 'title',
-      message: 'Project title: ',
+      message: 'Project title: (Required)',
+      validate: nameInput => {
+        if (nameInput) {
+          return true;
+        } else {
+          console.log('PLease enter your project name!');
+        }
+      },
     },
 
     {
       type: 'input',
       name: 'description',
-      message: 'Description of the project: ',
+      message: 'Description of the project: (Required)',
+      validate: nameInput => {
+        if (nameInput) {
+          return true;
+        } else {
+          console.log('Please enter a project description!');
+        }
+      },
     },
 
     {
       type: 'input',
       name: 'installation',
-      message: 'Installation instructions: ',
+      message: 'Installation instructions: (Required)',
+      validate: nameInput => {
+        if (nameInput) {
+          return true;
+        } else {
+          console.log(
+            'Please enter the installation instructions for your project!'
+          );
+          return false;
+        }
+      },
     },
 
     {
       type: 'input',
       name: 'usage',
-      message: 'Usage instructions: ',
+      message: 'Usage instructions: (Required)',
+      validate: nameInput => {
+        if (nameInput) {
+          return true;
+        } else {
+          console.log('Please enter usage instructions for your project!');
+          return false;
+        }
+      },
     },
 
     {
       type: 'list',
       name: 'license',
-      message: 'License for the project:',
+      message: 'License for the project: (Required)',
       choices: ['MIT', 'GNU', 'Apache'],
       default: ['MIT'],
+      validate: nameInput => {
+        if (nameInput) {
+          return true;
+        } else {
+          console.log('Please enter your project license!');
+          return false;
+        }
+      },
     },
 
     {
       type: 'input',
       name: 'contribution',
-      message: 'Contribution instructions:',
+      message: 'Would you like to enter contribution instructions?',
     },
 
     {
       type: 'input',
       name: 'test',
-      message: 'Command for running tests:',
-      default: 'npm test',
+      message: 'Would you like to enter a command for running tests?',
     },
     // contact Me Section
     {
       type: 'input',
       name: 'github',
-      message: 'GitHub username:',
+      message: 'GitHub username: (Required)',
+      validate: nameInput => {
+        if (nameInput) {
+          return true;
+        } else {
+          console.log('Please enter a valid GitHub username!');
+          return false;
+        }
+      },
     },
 
     {
       type: 'input',
       name: 'email',
-      message: 'Email Address',
+      message: 'Email Address: (Required)',
+      validate: nameInput => {
+        if (nameInput) {
+          return true;
+        } else {
+          console.log('Please enter a valid email address!');
+          return false;
+        }
+      },
     },
   ]);
 };
