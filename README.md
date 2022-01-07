@@ -1,5 +1,5 @@
 # Run Buddy
-  ![GitHub License](https://img.shields.io/badge/license-GNU-important)
+  ![GitHub License](https://img.shields.io/badge/license-Apache-important)
 
   ## Description
   cool buddy
@@ -11,8 +11,11 @@
   usage
 
   ## License
-  Permission to use this application is granted under the GNU license.
-  Click on the link for more information: [License Information](https://opensource.org/licenses/GNU)
+  Permission to use this application is granted under the Apache license.
+  Click on the link for more information: [License Information](https://opensource.org/licenses/Apache)
 
   ## How To Contribution
   contribute!
+
+  ## Testing
+  npm test

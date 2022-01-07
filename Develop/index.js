@@ -49,6 +49,13 @@ const questions = () => {
       name: 'contribution',
       message: 'Contribution instructions:',
     },
+
+    {
+      type: 'input',
+      name: 'test',
+      message: 'Command for running tests:',
+      default: 'npm test',
+    },
   ]);
 };
 
