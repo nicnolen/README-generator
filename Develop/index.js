@@ -1,16 +1,50 @@
-// TODO: Include packages needed for this application
-// process is a global object representing everything going on in the app
-// argv is an array that holds everything typed in the command line
-var profileDataArgs = process.argv.slice(2, process.argv.length);
-console.log(profileDataArgs);
+/* MODULES INCLUDED */
+// include node.js file system module
+const fs = require('fs');
+// include inquirer module in the index.js file
+const inquirer = require('inquirer');
+
+/* LINKING OTHER PAGES */
+// link to page where the README is created
+const generateMarkdown = require('./utils/generateMarkdown');
+
 // TODO: Create an array of questions for user input
-const questions = [];
+const questions = () => {
+  // prompt the user with array of questions using inquirer
+  return inquirer.prompt([
+    {
+      type: 'input',
+      name: 'title',
+      message: 'Project title',
+    },
+  ]);
+};
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// Function to write README file using file system
+const writeToFile = data => {
+  fs.writeFile('README.md', data, err => {
+    // if there is an error
+    if (err) {
+      console.log(err);
+      return;
+    } else {
+      // when the README is created
+      console.log('Your README has been successfully created!');
+    }
+  });
+};
 
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
+// Function to initialize app
+questions()
+  // getting user answers
+  .then(answers => {
+    return generateMarkdown(answers);
+  })
+  // using data to display on the page
+  .then(data => {
+    return writeToFile(data);
+  })
+  // catching errors
+  .catch(err => {
+    console.log(err);
+  });
