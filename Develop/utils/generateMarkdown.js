@@ -19,6 +19,8 @@ const generateMarkdown = data => {
   ## Description
   ${data.description}
 
+  ## Installation Instructions
+  ${data.installation}
 `;
 };
 
