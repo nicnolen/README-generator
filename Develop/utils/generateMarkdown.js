@@ -17,6 +17,15 @@ const generateMarkdown = data => {
   return `# ${data.title}
   ![GitHub License](https://img.shields.io/badge/license-${data.license}-important)
 
+  ## Table of Contents
+  - [Description](#description)
+  - [Installation Instructions](#installation-instructions)
+  - [Usage Instructions](#usage-instructions)
+  - [License](#license)
+  - [How To Contribute](#how-to-contribute)
+  - [Testing](#testing)
+  - [Contact Me](#contact-me)
+
   ## Description
   ${data.description}
 
@@ -37,8 +46,8 @@ const generateMarkdown = data => {
   ${data.test}
 
   ## Contact Me
-  GitHub Link: [GitHub Link](https://github.com/${data.github}),
-  Email Address: <a href="mailto:${data.email}">${data.email}</a>
+  GitHub Link: (https://github.com/${data.github})<br>
+  Email Address: <${data.email}>
 `;
 };
 
