@@ -35,6 +35,14 @@ const questions = () => {
       name: 'usage',
       message: 'Usage instructions: ',
     },
+
+    {
+      type: 'list',
+      name: 'license',
+      message: 'License for the project:',
+      choices: ['MIT', 'GNU', 'Apache'],
+      default: ['MIT'],
+    },
   ]);
 };
 
