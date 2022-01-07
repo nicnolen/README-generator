@@ -16,6 +16,9 @@ const renderLicenseSection = license => {};
 const generateMarkdown = data => {
   return `# ${data.title}
 
+  ## Description
+  ${data.description}
+
 `;
 };
 
