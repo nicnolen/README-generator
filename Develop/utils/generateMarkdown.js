@@ -32,6 +32,9 @@ const generateMarkdown = data => {
 
   ## How To Contribution
   ${data.contribution}
+
+  ## Testing
+  ${data.test}
 `;
 };
 
