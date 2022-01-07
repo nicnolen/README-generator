@@ -12,19 +12,23 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const questions = () => {
   // prompt the user with array of questions using inquirer
   return inquirer.prompt([
-      // project title
     {
       type: 'input',
       name: 'title',
-      message: 'Project title',
+      message: 'Project title: ',
     },
-    
-    // project description 
+
     {
-        type: 'input',
-        name: 'description',
-        message: 'Description of the project',
-    }
+      type: 'input',
+      name: 'description',
+      message: 'Description of the project: ',
+    },
+
+    {
+      type: 'input',
+      name: 'installation',
+      message: 'Installation instructions: ',
+    },
   ]);
 };
 

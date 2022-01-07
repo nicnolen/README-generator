@@ -1,5 +1,7 @@
-# Run Buddy
+# Nic
 
   ## Description
-  Cool coding
+  i like to code
 
+  ## Installation Instructions
+  install
