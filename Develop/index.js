@@ -18,6 +18,13 @@ const questions = () => {
       name: 'title',
       message: 'Project title',
     },
+    
+    // project description 
+    {
+        type: 'input',
+        name: 'description',
+        message: 'Description of the project',
+    }
   ]);
 };
 
