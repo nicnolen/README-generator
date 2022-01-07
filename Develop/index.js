@@ -8,10 +8,11 @@ const inquirer = require('inquirer');
 // link to page where the README is created
 const generateMarkdown = require('./utils/generateMarkdown');
 
-// TODO: Create an array of questions for user input
+// Create an array of questions for user input
 const questions = () => {
   // prompt the user with array of questions using inquirer
   return inquirer.prompt([
+      // project title
     {
       type: 'input',
       name: 'title',
