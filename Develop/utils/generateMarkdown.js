@@ -21,6 +21,9 @@ const generateMarkdown = data => {
 
   ## Installation Instructions
   ${data.installation}
+
+  ## Usage Instructions
+  ${data.usage}
 `;
 };
 

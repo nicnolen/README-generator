@@ -1,7 +1,10 @@
-# Nic
+# Run Buddy
 
   ## Description
-  i like to code
+  cool buddy
 
   ## Installation Instructions
   install
+
+  ## Usage Instructions
+  use this

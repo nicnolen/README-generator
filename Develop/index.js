@@ -10,7 +10,7 @@ const generateMarkdown = require('./utils/generateMarkdown');
 
 // Create an array of questions for user input
 const questions = () => {
-  // prompt the user with array of questions using inquirer
+  // prompt the user with array of questions using inquirer. Use the name parameter value for template literals when writing the README
   return inquirer.prompt([
     {
       type: 'input',
@@ -28,6 +28,12 @@ const questions = () => {
       type: 'input',
       name: 'installation',
       message: 'Installation instructions: ',
+    },
+
+    {
+      type: 'input',
+      name: 'usage',
+      message: 'Usage instructions: ',
     },
   ]);
 };
