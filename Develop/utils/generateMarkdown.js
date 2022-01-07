@@ -29,6 +29,9 @@ const generateMarkdown = data => {
   ## License
   Permission to use this application is granted under the ${data.license} license.
   Click on the link for more information: [License Information](https://opensource.org/licenses/${data.license})
+
+  ## How To Contribution
+  ${data.contribution}
 `;
 };
 
