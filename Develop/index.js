@@ -56,6 +56,18 @@ const questions = () => {
       message: 'Command for running tests:',
       default: 'npm test',
     },
+    // contact Me Section
+    {
+      type: 'input',
+      name: 'github',
+      message: 'GitHub username:',
+    },
+
+    {
+      type: 'input',
+      name: 'email',
+      message: 'Email Address',
+    },
   ]);
 };
 

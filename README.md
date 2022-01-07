@@ -1,21 +1,25 @@
 # Run Buddy
-  ![GitHub License](https://img.shields.io/badge/license-Apache-important)
+  ![GitHub License](https://img.shields.io/badge/license-MIT-important)
 
   ## Description
   cool buddy
 
   ## Installation Instructions
-  install
+  install this
 
   ## Usage Instructions
-  usage
+  use this
 
   ## License
-  Permission to use this application is granted under the Apache license.
-  Click on the link for more information: [License Information](https://opensource.org/licenses/Apache)
+  Permission to use this application is granted under the MIT license.
+  Click on the link for more information: [License Information](https://opensource.org/licenses/MIT)
 
   ## How To Contribution
-  contribute!
+  Contribute!
 
   ## Testing
   npm test
+
+  ## Contact Me
+  GitHub Link: [GitHub Link](https://github.com/nicnolen),
+  Email Address: <nicnolen@ymail.com>
