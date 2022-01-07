@@ -15,6 +15,7 @@ const renderLicenseSection = license => {};
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = data => {
   return `# ${data.title}
+  ![GitHub License](https://img.shields.io/badge/license-${data.license}-important)
 
   ## Description
   ${data.description}
@@ -24,6 +25,10 @@ const generateMarkdown = data => {
 
   ## Usage Instructions
   ${data.usage}
+
+  ## License
+  Permission to use this application is granted under the ${data.license} license.
+  Click on the link for more information: [License Information](https://opensource.org/licenses/${data.license})
 `;
 };
 
