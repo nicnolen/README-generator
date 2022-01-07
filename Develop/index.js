@@ -43,6 +43,12 @@ const questions = () => {
       choices: ['MIT', 'GNU', 'Apache'],
       default: ['MIT'],
     },
+
+    {
+      type: 'input',
+      name: 'contribution',
+      message: 'Contribution instructions:',
+    },
   ]);
 };
 
