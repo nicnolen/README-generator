@@ -38,7 +38,7 @@ const generateMarkdown = data => {
 
   ## Contact Me
   GitHub Link: [GitHub Link](https://github.com/${data.github}),
-  Email Address: <a href="mailto:${data.email}">${data.email}</a>
+  Email Address: <${data.email}>
 `;
 };
 

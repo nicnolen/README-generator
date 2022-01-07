@@ -2,20 +2,20 @@
   ![GitHub License](https://img.shields.io/badge/license-MIT-important)
 
   ## Description
-  cool buddy
+  cool project
 
   ## Installation Instructions
-  install this
+  install
 
   ## Usage Instructions
-  use this
+  use
 
   ## License
   Permission to use this application is granted under the MIT license.
   Click on the link for more information: [License Information](https://opensource.org/licenses/MIT)
 
   ## How To Contribution
-  Contribute!
+  contribute
 
   ## Testing
   npm test
