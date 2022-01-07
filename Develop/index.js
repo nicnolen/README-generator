@@ -22,6 +22,7 @@ const questions = () => {
 
 // Function to write README file using file system
 const writeToFile = data => {
+  // writeFile allows you to write a file using three parameters: (name of file, data, callback for errors)
   fs.writeFile('README.md', data, err => {
     // if there is an error
     if (err) {
