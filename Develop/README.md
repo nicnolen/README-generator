@@ -5,7 +5,7 @@
   - [Description](#description)
   - [Installation Instructions](#installation-instructions)
   - [Usage Instructions](#usage-instructions)
-  - [License](#license)
+  
   - [How To Contribute](#how-to-contribute)
   - [Testing](#testing)
   - [Contact Me](#contact-me)
@@ -14,12 +14,12 @@
   cool stuff
 
   ## Installation Instructions
-  install
+  undefined
 
   ## Usage Instructions
   use
 
-  undefined
+  
 
   ## How To Contribution
   undefined
@@ -28,5 +28,5 @@
   undefined
 
   ## Contact Me
-  GitHub Link: (https://github.com/nicnollen)<br>
-  Email Address: <nicnlen@ymail.com>
+  GitHub Link: (https://github.com/nicnolen@ymail.com)<br>
+  Email Address: <nicnolen@ymail.com>

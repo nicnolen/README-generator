@@ -41,19 +41,17 @@ const questions = () => {
     },
 
     {
+      type: 'confirm',
+      name: 'confirmInstallation',
+      message: 'Would you like to enter installation instructions?',
+      default: true,
+    },
+
+    {
       type: 'input',
       name: 'installation',
-      message: 'Installation instructions: (Required)',
-      validate: nameInput => {
-        if (nameInput) {
-          return true;
-        } else {
-          console.log(
-            'Please enter the installation instructions for your project!'
-          );
-          return false;
-        }
-      },
+      message: 'Installation instructions:',
+      when: ({ confirmInstallation }) => confirmInstallation,
     },
 
     {
