@@ -7,7 +7,6 @@
   - [Usage Instructions](#usage-instructions)
   - [License](#license)
   - [How To Contribute](#how-to-contribute)
-  - [Testing](#testing)
   - [Contact Me](#contact-me)
 
   ## Description
@@ -48,10 +47,6 @@
   ## How To Contribution
 
   Contributors should read the installation section
-
-  ## Testing
-
-  N/A
 
   ## Contact Me
 

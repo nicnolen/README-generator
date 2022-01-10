@@ -25,7 +25,7 @@ const renderInstallationSection = installation => {
   if (installation) {
     return `
     ## Installation Instructions
-    ${data.installation}`;
+    ${installation}`;
   } else {
     return '';
   }
@@ -72,7 +72,7 @@ const renderContributionSection = contribution => {
   if (contribution) {
     return `
     ## How To Contribution
-    ${data.contribution}`;
+    ${contribution}`;
   } else {
     return '';
   }
@@ -93,8 +93,8 @@ const renderTest = test => {
 const renderTestSection = test => {
   if (test) {
     return `
-    ## How To Contribution
-    ${data.contribution}`;
+    ## Tests
+    ${test}`;
   } else {
     return '';
   }
