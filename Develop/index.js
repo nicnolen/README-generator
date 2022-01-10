@@ -20,7 +20,8 @@ const questions = () => {
         if (nameInput) {
           return true;
         } else {
-          console.log('PLease enter your project name!');
+          console.log('Please enter your project name!');
+          return false;
         }
       },
     },
@@ -34,6 +35,7 @@ const questions = () => {
           return true;
         } else {
           console.log('Please enter a project description!');
+          return false;
         }
       },
     },
@@ -85,16 +87,33 @@ const questions = () => {
     },
 
     {
+      type: 'confirm',
+      name: 'confirmContribution',
+      message: 'Would you like to enter contribution instructions?',
+      default: true,
+    },
+
+    {
       type: 'input',
       name: 'contribution',
-      message: 'Would you like to enter contribution instructions?',
+      message: 'Information about how to contribute:',
+      when: ({ confirmContribution }) => confirmContribution,
+    },
+
+    {
+      type: 'confirm',
+      name: 'confirmTest',
+      message: 'Would you like to enter a command for running tests?',
+      default: false,
     },
 
     {
       type: 'input',
       name: 'test',
-      message: 'Would you like to enter a command for running tests?',
+      message: 'Command for running tests:',
+      when: ({ confirmTest }) => confirmTest,
     },
+
     // contact Me Section
     {
       type: 'input',
