@@ -71,19 +71,19 @@ const questions = () => {
     },
 
     {
+      type: 'confirm',
+      name: 'confirmLicense',
+      message: 'Would you like to add a license to your project?',
+      default: true,
+    },
+
+    {
       type: 'list',
       name: 'license',
       message: 'License for the project: (Required)',
       choices: ['MIT', 'GNU', 'Apache'],
       default: ['MIT'],
-      validate: nameInput => {
-        if (nameInput) {
-          return true;
-        } else {
-          console.log('Please enter your project license!');
-          return false;
-        }
-      },
+      when: ({ confirmLicense }) => confirmLicense,
     },
 
     {

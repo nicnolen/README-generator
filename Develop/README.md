@@ -1,5 +1,5 @@
-# run
-  ![GitHub License](https://img.shields.io/badge/license-MIT-important)
+# run buddy
+  
 
   ## Table of Contents
   - [Description](#description)
@@ -11,7 +11,7 @@
   - [Contact Me](#contact-me)
 
   ## Description
-  yay
+  cool stuff
 
   ## Installation Instructions
   install
@@ -19,16 +19,14 @@
   ## Usage Instructions
   use
 
-  ## License
-  Permission to use this application is granted under the MIT license.
-  Click on the link for more information: [License Information](https://opensource.org/licenses/MIT)
+  undefined
 
   ## How To Contribution
-  contribute
+  undefined
 
   ## Testing
   undefined
 
   ## Contact Me
-  GitHub Link: (https://github.com/nicnolen)<br>
-  Email Address: <nicnolen@ymail.com>
+  GitHub Link: (https://github.com/nicnollen)<br>
+  Email Address: <nicnlen@ymail.com>
