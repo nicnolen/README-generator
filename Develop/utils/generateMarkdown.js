@@ -9,8 +9,28 @@ const renderLicenseBadge = license => {
   }
 };
 
+// Function that renders the installation section in the table of contents
+const renderInstallation = installation => {
+  // if there is a installation section, create a installation section in table of contents
+  if (installation) {
+    return `- [Installation Instructions](#installation-instructions)`;
+  } else {
+    // if there is no installation section, return an empty string
+    return '';
+  }
+};
+
+// Function that renders the installation section
+const renderInstallationSection = installation => {
+  if (installation) {
+    return `
+    ## Installation Instructions
+    ${data.installation}`;
+  }
+};
+
 // Function that puts license section in table of contents
-const renderLicenseSection = license => {
+const renderLicense = license => {
   if (license) {
     // if there is a license, create a license section in table of contents
     return `- [License Section](#license)`;
@@ -21,7 +41,7 @@ const renderLicenseSection = license => {
 };
 
 // Function to create a license section with a link to license information
-const renderLicenseInfo = license => {
+const renderLicenseSection = license => {
   // create a link to license information if there is a license
   if (license) {
     return `
@@ -36,15 +56,15 @@ const renderLicenseInfo = license => {
 
 // Function to generate markdown for README
 const generateMarkdown = data => {
-  const { license } = data;
+  const { installation, license } = data;
   return `# ${data.title}
   ${renderLicenseBadge(data.license)}
 
   ## Table of Contents
   - [Description](#description)
-  - [Installation Instructions](#installation-instructions)
+  ${renderInstallation(installation)}
   - [Usage Instructions](#usage-instructions)
-  ${renderLicenseSection(license)}
+  ${renderLicense(license)}
   - [How To Contribute](#how-to-contribute)
   - [Testing](#testing)
   - [Contact Me](#contact-me)
@@ -52,13 +72,12 @@ const generateMarkdown = data => {
   ## Description
   ${data.description}
 
-  ## Installation Instructions
-  ${data.installation}
+  ${renderInstallationSection(installation)}
 
   ## Usage Instructions
   ${data.usage}
 
-  ${renderLicenseInfo(license)}
+  ${renderLicenseSection(license)}
 
   ## How To Contribution
   ${data.contribution}
