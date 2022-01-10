@@ -1,4 +1,4 @@
-# run buddy
+# Professional ReadMe
   ![MIT License](https://img.shields.io/badge/license-MIT-important)
 
   ## Table of Contents
@@ -11,14 +11,14 @@
   - [Contact Me](#contact-me)
 
   ## Description
-  cool 
+  Generates professional README
 
   
     ## Installation Instructions
-    install
+    Install this
 
   ## Usage Instructions
-  use
+  use this
 
   
     ## License
@@ -27,7 +27,7 @@
 
   
     ## How To Contribution
-    contribute
+    Contribute!
 
   
     ## Tests
