@@ -56,13 +56,13 @@ const renderLicenseSection = license => {
   }
 };
 
-// Function that renders the installation section in the table of contents
+// Function that renders the contribution section in the table of contents
 const renderContribution = contribution => {
   // if there is a contribution section, create a contribution section in table of contents
   if (contribution) {
     return `- [How To Contribute](#how-to-contribute)`;
   } else {
-    // if there is no installation section, return an empty string
+    // if there is no contribution section, return an empty string
     return '';
   }
 };
@@ -78,10 +78,32 @@ const renderContributionSection = contribution => {
   }
 };
 
+// Function that renders the test section in the table of contents
+const renderTest = test => {
+  // if there is a test section, create a test section in table of contents
+  if (test) {
+    return `- [Testing](#testing)`;
+  } else {
+    // if there is no test section, return an empty string
+    return '';
+  }
+};
+
+// Function that renders the test section
+const renderTestSection = test => {
+  if (test) {
+    return `
+    ## How To Contribution
+    ${data.contribution}`;
+  } else {
+    return '';
+  }
+};
+
 // Function to generate markdown for README
 const generateMarkdown = data => {
   // define the data variables
-  const { installation, license, contribution } = data;
+  const { installation, license, contribution, test } = data;
 
   return `# ${data.title}
   ${renderLicenseBadge(data.license)}
@@ -92,7 +114,7 @@ const generateMarkdown = data => {
   - [Usage Instructions](#usage-instructions)
   ${renderLicense(license)}
   ${renderContribution(contribution)}
-  - [Testing](#testing)
+  ${renderTest(test)}
   - [Contact Me](#contact-me)
 
   ## Description
@@ -107,8 +129,7 @@ const generateMarkdown = data => {
 
   ${renderContributionSection(contribution)}
 
-  ## Testing
-  ${data.test}
+  ${renderTestSection(test)}
 
   ## Contact Me
   GitHub Link: (https://github.com/${data.github})<br>
