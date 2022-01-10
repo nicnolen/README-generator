@@ -26,6 +26,8 @@ const renderInstallationSection = installation => {
     return `
     ## Installation Instructions
     ${data.installation}`;
+  } else {
+    return '';
   }
 };
 
@@ -54,9 +56,33 @@ const renderLicenseSection = license => {
   }
 };
 
+// Function that renders the installation section in the table of contents
+const renderContribution = contribution => {
+  // if there is a contribution section, create a contribution section in table of contents
+  if (contribution) {
+    return `- [How To Contribute](#how-to-contribute)`;
+  } else {
+    // if there is no installation section, return an empty string
+    return '';
+  }
+};
+
+// Function that renders the contribution section
+const renderContributionSection = contribution => {
+  if (contribution) {
+    return `
+    ## How To Contribution
+    ${data.contribution}`;
+  } else {
+    return '';
+  }
+};
+
 // Function to generate markdown for README
 const generateMarkdown = data => {
-  const { installation, license } = data;
+  // define the data variables
+  const { installation, license, contribution } = data;
+
   return `# ${data.title}
   ${renderLicenseBadge(data.license)}
 
@@ -65,7 +91,7 @@ const generateMarkdown = data => {
   ${renderInstallation(installation)}
   - [Usage Instructions](#usage-instructions)
   ${renderLicense(license)}
-  - [How To Contribute](#how-to-contribute)
+  ${renderContribution(contribution)}
   - [Testing](#testing)
   - [Contact Me](#contact-me)
 
@@ -79,8 +105,7 @@ const generateMarkdown = data => {
 
   ${renderLicenseSection(license)}
 
-  ## How To Contribution
-  ${data.contribution}
+  ${renderContributionSection(contribution)}
 
   ## Testing
   ${data.test}
