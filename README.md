@@ -1,4 +1,4 @@
-# Portfolio Generator
+# Professional README.md Generator
   ![GitHub License](https://img.shields.io/badge/license-MIT-important)
 
   ## Table of Contents
