@@ -1,5 +1,5 @@
-# Professional ReadMe
-  ![MIT License](https://img.shields.io/badge/license-MIT-important)
+# Run Buddy
+  ![Apache License](https://img.shields.io/badge/license-Apache-important)
 
   ## Table of Contents
   - [Description](#description)
@@ -11,23 +11,23 @@
   - [Contact Me](#contact-me)
 
   ## Description
-  Generates professional README
+  I like to code
 
   
     ## Installation Instructions
-    Install this
+    Install me like this
 
   ## Usage Instructions
-  use this
+  Use me like this
 
   
     ## License
-      Permission to use this application is granted under the MIT license.
-      Click on the link for more information: [MIT License Information](https://opensource.org/licenses/MIT)
+      Permission to use this application is granted under the Apache license.
+      Click on the link for more information: [Apache License Information](https://opensource.org/licenses/Apache)
 
   
     ## How To Contribution
-    Contribute!
+    Contribute like this
 
   
     ## Tests
