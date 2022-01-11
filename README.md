@@ -49,7 +49,7 @@ The finished README should look similar to the screenshot below
 
 ![README Homepage](https://user-images.githubusercontent.com/88728912/149027693-40570dd9-e8d0-4238-8e91-292df7501c23.png)
 
-## Visual Walkthrough
+### Visual Walkthrough
 
 For a visual walkthrough about how to create the README, click on the link:
 [Screencastify Walkthrough](https://watch.screencastify.com/v/bYsHkl0UAliwIvZ9EejS)
