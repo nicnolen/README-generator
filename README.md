@@ -39,6 +39,10 @@
 
   5. When you are dont making changes, add and commit your README using `git add -A` and `git commit` and push the README to the correct repository using `git push origin main`
 
+  ## Visual Walkthrough
+  For a visual walkthrough about how to create the README, click on the link below
+  [Screencastify Walkthrough](https://watch.screencastify.com/v/bYsHkl0UAliwIvZ9EejS)
+
   ## License
 
   Permission to use this application is granted under the MIT license.
