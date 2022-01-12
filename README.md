@@ -52,7 +52,7 @@ The finished README should look similar to the screenshot below
 ### Visual Walkthrough
 
 For a visual walkthrough about how to create the README, click on the link:
-[Screencastify Walkthrough](https://watch.screencastify.com/v/bYsHkl0UAliwIvZ9EejS)
+[Screencastify Walkthrough](https://user-images.githubusercontent.com/88728912/149160396-ca7069aa-47b2-4875-a157-7f0555fa49bc.mp4)
 
 ## License
 
