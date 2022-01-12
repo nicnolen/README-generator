@@ -22,10 +22,10 @@ const renderInstallation = installation => {
 
 // Function that renders the installation section
 const renderInstallationSection = installation => {
+  const installationSection = `## Installation Instructions
+  ${installation}`;
   if (installation) {
-    return `
-    ## Installation Instructions
-    ${installation}`;
+    return installationSection;
   } else {
     return '';
   }
@@ -44,12 +44,12 @@ const renderLicense = license => {
 
 // Function to create a license section with a link to license information
 const renderLicenseSection = license => {
+  const licenseSection = `## License
+  Permission to use this application is granted under the ${license} license.
+  Click on the link for more information: [${license} License Information](https://opensource.org/licenses/${license})`;
   // create a link to license information if there is a license
   if (license) {
-    return `
-    ## License
-      Permission to use this application is granted under the ${license} license.
-      Click on the link for more information: [${license} License Information](https://opensource.org/licenses/${license})`;
+    return licenseSection;
   } else {
     // if there is no license, return an empty string
     return '';
@@ -69,10 +69,10 @@ const renderContribution = contribution => {
 
 // Function that renders the contribution section
 const renderContributionSection = contribution => {
+  const contributionSection = `## How To Contribution
+  ${contribution}`;
   if (contribution) {
-    return `
-    ## How To Contribution
-    ${contribution}`;
+    return contributionSection;
   } else {
     return '';
   }
@@ -91,10 +91,10 @@ const renderTest = test => {
 
 // Function that renders the test section
 const renderTestSection = test => {
+  testSection = `## Tests
+  ${test}`;
   if (test) {
-    return `
-    ## Tests
-    ${test}`;
+    return testSection;
   } else {
     return '';
   }
@@ -106,7 +106,7 @@ const generateMarkdown = data => {
   const { installation, license, contribution, test } = data;
 
   return `# ${data.title}
-  ${renderLicenseBadge(data.license)}
+${renderLicenseBadge(data.license)}
 
   ## Table of Contents
   - [Description](#description)
