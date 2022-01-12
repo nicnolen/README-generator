@@ -1,43 +1,34 @@
 # Run Buddy
+![MIT License](https://img.shields.io/badge/license-MIT-important)
 
-![Apache License](https://img.shields.io/badge/license-Apache-important)
+  ## Table of Contents
+  - [Description](#description)
+  - [Installation Instructions](#installation-instructions)
+  - [Usage Instructions](#usage-instructions)
+  - [License Section](#license)
+  - [How To Contribute](#how-to-contribute)
+  - [Testing](#testing)
+  - [Contact Me](#contact-me)
 
-## Table of Contents
+  ## Description
+  I like to code
 
-- [Description](#description)
-- [Installation Instructions](#installation-instructions)
-- [Usage Instructions](#usage-instructions)
-- [License Section](#license)
-- [How To Contribute](#how-to-contribute)
-- [Testing](#testing)
-- [Contact Me](#contact-me)
+  ## Installation Instructions
+  Install me!
 
-## Description
+  ## Usage Instructions
+  Use me!
 
-I like to code
+  ## License
+  Permission to use this application is granted under the MIT license.
+  Click on the link for more information: [MIT License Information](https://opensource.org/licenses/MIT)
 
-## Installation Instructions
+  ## How To Contribution
+  Contribute!
 
-    Install me like this
+  ## Tests
+  npm.init
 
-## Usage Instructions
-
-Use me like this
-
-## License
-
-      Permission to use this application is granted under the Apache license.
-      Click on the link for more information: [Apache License Information](https://opensource.org/licenses/Apache)
-
-## How To Contribution
-
-    Contribute like this
-
-## Tests
-
-    npm.init
-
-## Contact Me
-
-GitHub Link: (https://github.com/nicnolen)<br>
-Email Address: <nicnolen@ymail.com>
+  ## Contact Me
+  GitHub Link: (https://github.com/nicnolen)<br>
+  Email Address: <nicnolen@ymail.com>
