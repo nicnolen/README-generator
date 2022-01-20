@@ -43,7 +43,7 @@ When you first clone the code, you should see the same folders and code as shown
 
 4. Once all the questions have been answered, you should be prompted with a message that says "Your README has been successfully created!" in the command line. You can check out your new README.md in the explorer tab in your code editor and make changes if you wish.
 
-5. When you are dont making changes, add and commit your README using `git add -A` and `git commit` and push the README to the correct repository using `git push origin main`
+5. When you are done making changes, add and commit your README using `git add -A` and `git commit` and push the README to the correct repository using `git push origin main`
 
 The finished README should look similar to the screenshot below
 
